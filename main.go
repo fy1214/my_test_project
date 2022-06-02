@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/codegangsta/cli"
 	"os"
-	"test_project/router"
 )
 
 const (
@@ -18,7 +17,7 @@ func main() {
 	app.Writer = os.Stdout
 
 	app.Commands = []cli.Command{
-		router.ActiveScanner,
+		ActiveScanner,
 	}
 	_ = app.Run(os.Args)
 }
